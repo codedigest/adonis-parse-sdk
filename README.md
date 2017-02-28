@@ -17,6 +17,15 @@ appId: 'Your-app-ID',
 serverUrl: 'Your-parse-server-URL',
 ```
 
+Also you need to add the provider to AdonisJS at `bootstrap/app.js`:
+
+```
+const providers = [
+   ...
+   'adonis-parse-sdk/providers/ParseProvider'
+]
+```
+
 then you can simply call it from within controllers etc:
 
 ```
