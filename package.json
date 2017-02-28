@@ -1,0 +1,27 @@
+{
+  "name": "adonis-parse-sdk",
+  "version": "1.0.0",
+  "description": "Parse SDK for AdonisJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeDigest/adonis-parse-sdk.git"
+  },
+  "keywords": [
+    "AdonisJS",
+    "Parse",
+    "SDK"
+  ],
+  "author": "CodeDigest <development@codedigest.io> (https://codedigest.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeDigest/adonis-parse-sdk/issues"
+  },
+  "homepage": "https://github.com/CodeDigest/adonis-parse-sdk#readme",
+  "dependencies": {
+    "parse": "^1.9.2"
+  }
+}
