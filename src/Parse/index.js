@@ -1,12 +1,15 @@
 'use strict'
 
-const Parse = require('parse/node')
+const ParseSDK = require('parse/node')
 
-// Get Configuration
-const Config = require('../Config')
+class Parse {
 
-// Parse Initialization
-Parse.initialize( Config.appId )
-Parse.serverURL = Config.serverUrl
+  initialize(appId, serverUrl, optionalJSKey, masterKey) {
+    ParseSDK.initialize(appId, optionalJSKey, masterKey)
+    ParseSDK.serverURL = serverUrl
+    return ParseSDK
+  }
 
-module.exports = Parse
+}
+
+module.exports = new Parse

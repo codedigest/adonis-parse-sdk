@@ -10,14 +10,63 @@ npm install adonis-parse-sdk --save
 
 ## Usage
 
-Edit the config file at `node_modules/adonis-parse-sdk/src/Config/index.js` and add your parse server settings
+Create a file in `app/config/parseSdk.js` and paste the code below by replacing it's values where necessary:
 
-```
-appId: 'Your-app-ID',
-serverUrl: 'Your-parse-server-URL',
+```javascript
+'use strict'
+
+/*
+ |--------------------------------------------------------------------------
+ | Parse Configuration
+ |--------------------------------------------------------------------------
+ |
+ | Here we define the configuration for the parse server.
+ |
+ */
+
+module.exports = {
+
+  /*
+   |--------------------------------------------------------------------------
+   | Parse Application ID
+   |--------------------------------------------------------------------------
+   |
+   | Define the same application ID as the one specified in the parse server
+   | appId: 'Your-parse-app-ID',
+   */
+  appId: null,
+
+  /*
+   |--------------------------------------------------------------------------
+   | Parse Javascript key
+   |--------------------------------------------------------------------------
+   | javaScriptKey: 'Your-parse-javaScript-key'
+   */
+  javaScriptKey: null,
+
+  /*
+   |--------------------------------------------------------------------------
+   | Parse Javascript key
+   |--------------------------------------------------------------------------
+   | masterKey: 'Your-parse-master-key',
+   */
+  masterKey: null,
+
+  /*
+   |--------------------------------------------------------------------------
+   | Parse Server URL
+   |--------------------------------------------------------------------------
+   |
+   | Define the parse URL: e.g. https://domain.com:4040/parse
+   | serverUrl: 'Your-parse-server-URL',
+   |
+   */
+  serverUrl: null,
+
+}
 ```
 
-Also you need to add the provider to AdonisJS at `bootstrap/app.js`:
+Also you need to add the provider to AdonisJS at `app/bootstrap/app.js`:
 
 ```
 const providers = [
@@ -98,6 +147,3 @@ class LoginController {
     }
 }
 ```
-
-@Todo
-  - Auth Integration
