@@ -1,6 +1,6 @@
 {
   "name": "adonis-parse-sdk",
-  "version": "1.1.0",
+  "version": "1.0.3",
   "description": "Parse SDK for AdonisJS",
   "main": "index.js",
   "scripts": {
