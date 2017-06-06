@@ -4,7 +4,7 @@ JavaScript Parse SDK wrapper for Adonis JS
 
 ## Install
 
-```
+```bash
 npm install adonis-parse-sdk --save
 ```
 
@@ -68,7 +68,7 @@ module.exports = {
 
 Also you need to add the provider to AdonisJS at `app/bootstrap/app.js`:
 
-```
+```javascript
 const providers = [
    ...
    'adonis-parse-sdk/providers/ParseProvider'
@@ -77,7 +77,7 @@ const providers = [
 
 then you can simply call it from within controllers etc:
 
-```
+```javascript
 const Parse = use('Parse')
 ```
 
@@ -85,7 +85,7 @@ const Parse = use('Parse')
 
 Add to one of your controllers. e.g. LoginController:
 
-```
+```javascript
 'use strict'
 const Parse = use('Parse')
 
